@@ -1,4 +1,4 @@
-import { Crop } from "@/app/analytics/crops-table/columns";
+import { Crop } from "@/app/history/crops-table/columns";
 
 export const generateCropData = (): Crop[] => {
   const cropTypes = ["Blé", "Maïs fourrager", "Maïs", "Légumineuse"];
