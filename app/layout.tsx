@@ -3,6 +3,7 @@ import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/Layout/app-sidebar";
 import { Poppins } from "next/font/google";
+import Footer from "@/components/Layout/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main className="w-full">
             <SidebarTrigger />
             {children}
+            <Footer />
           </main>
         </SidebarProvider>{" "}
       </body>

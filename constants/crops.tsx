@@ -67,7 +67,7 @@ const CROPS: Crop[] = [
     diseases: ["fusariose", "helminthosporiose", "charbon"],
     tolerance: { salinity: "medium", drought: "low" },
     nitrogenFixation: false,
-    optimalTemp: [15, 25], // Optimal temperature range
+    optimalTemp: [15, 30], // Optimal temperature range
     humidityTolerance: 80, // Humidity tolerance
     score: 0,
   },
