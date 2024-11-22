@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <SidebarProvider>
           <AppSidebar />
-          <main className="w-full">
+          <main className="w-full mt-8">
             <SidebarTrigger />
             {children}
             <Footer />
