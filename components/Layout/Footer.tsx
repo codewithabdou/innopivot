@@ -20,7 +20,7 @@ const Footer = () => {
         </h1>
       </div>
       <p className="text-sm md:order-2 order-3 text-gray-900">
-        All rights reserved. &copy; {new Date().getFullYear()} InnoPivot.{" "}
+        Tous les droits réservés &copy; {new Date().getFullYear()} InnoPivot.{" "}
       </p>
       <div className="flex gap-4  items-center justify-center">
         <Facebook className="h-6 w-6 hover:cursor-pointer hover:scale-105 hover:-translate-y-1 text-gray-900 hover:text-blue-500 transition-all duration-300" />

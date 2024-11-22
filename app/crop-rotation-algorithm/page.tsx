@@ -362,8 +362,9 @@ const page = () => {
         <>
           <div className="flex w-full flex-col py-8 gap-4">
             <h2 className="font-semibold text-xl lg:text-2xl text-gray-700">
-              Rule-based recommandation scoring results
+              Résultats du scoring de recommandation basé sur des règles
             </h2>
+
             <div className="py-4 ">
               <div
                 className={"lg:w-[90%] lg:translate-x-0 w-full -translate-x-8"}
@@ -384,8 +385,9 @@ const page = () => {
           </div>
           <div className="flex w-full flex-col py-8 gap-4">
             <h2 className="font-semibold text-xl lg:text-2xl text-gray-700">
-              Recommandation results explanations
+              Explications des résultats de la recommandation
             </h2>
+
             <div className=" py-4 ">
               <div className="space-y-8">
                 {result.explanations.map((explanation: any, index: number) => (
@@ -401,7 +403,7 @@ const page = () => {
                       {explanation.crop}
                     </h3>
                     <p className="text-blue-500 font-semibold">
-                      Overall score : {explanation.score}
+                      Score global : {explanation.score}
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                       <div className="py-4 lg:px-4">
