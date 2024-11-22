@@ -45,18 +45,18 @@ const items = [
     icon: LayoutDashboard,
   },
   {
-    title: "Outils AI",
-    url: "/ai-tools",
-    icon: Bot,
-  },
-  {
     title: "Rotation des Cultures",
     url: "/crop-rotation-algorithm",
     icon: Sprout,
   },
   {
-    title: "Analyse des Données",
-    url: "/analytics",
+    title: "Outils AI",
+    url: "/ai-tools",
+    icon: Bot,
+  },
+  {
+    title: "Historique des Données",
+    url: "/history",
     icon: ChartNoAxesColumn,
   },
   {

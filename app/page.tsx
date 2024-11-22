@@ -77,10 +77,18 @@ export default function Home() {
       <h2 className="font-semibold text-xl lg:text-2xl text-gray-700">
         Valeurs actuelles des données des capteurs du sol
       </h2>
+      <p className="text-blue-500 my-2 text-sm font-light">
+        Les valeurs ci-dessous sont les valeurs actuelles des capteurs de sol
+        les dernieres 24 heures.
+      </p>
       <ChartSol />
       <h2 className="font-semibold text-xl lg:text-2xl mt-8 text-gray-700">
         Valeurs actuelles des données des capteurs d'air
       </h2>
+      <p className="text-blue-500 my-2 text-sm font-light">
+        Les valeurs ci-dessous sont les valeurs actuelles des capteurs d'air les
+        dernieres 24 heures.
+      </p>
       <ChartAir />
     </div>
   );

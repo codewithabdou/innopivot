@@ -2,9 +2,6 @@ import React from "react";
 import { DataTable } from "./crops-table/data-table";
 import { columns } from "./crops-table/columns";
 import { generateCropData } from "@/lib/generate-crop-logs";
-import Chart from "react-google-charts";
-import { generateGantCropData } from "@/lib/generate-gantt-data";
-import GanttChart from "@/components/Charts/GanttChart";
 
 const page = () => {
   const data = generateCropData();
@@ -16,7 +13,6 @@ const page = () => {
       <p className="text-blue-500 text-sm font-light">
         Vous pouvez consulter l'historique de vos cultures précédentes
       </p>
-      <GanttChart />
       <DataTable columns={columns} data={data} />
     </div>
   );
