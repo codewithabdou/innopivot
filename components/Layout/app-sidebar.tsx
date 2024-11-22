@@ -28,6 +28,8 @@ import {
 import { Style_Script as fontSignature } from "next/font/google";
 import { cn } from "@/lib/utils";
 
+import { usePathname } from "next/navigation";
+import { use } from "react";
 const signature = fontSignature({
   variable: "--font-signature",
   weight: "400",
@@ -43,28 +45,30 @@ const items = [
     icon: LayoutDashboard,
   },
   {
-    title: "AI Tools",
-    url: "#",
+    title: "Outils AI",
+    url: "/ai-tools",
     icon: Bot,
   },
   {
-    title: "Crop Rotation",
+    title: "Rotation des Cultures",
     url: "/crop-rotation-algorithm",
     icon: Sprout,
   },
   {
-    title: "Analytics",
-    url: "#",
+    title: "Analyse des Données",
+    url: "/analytics",
     icon: ChartNoAxesColumn,
   },
   {
-    title: "Pivot Control",
-    url: "#",
+    title: "Contrôle de Pivot",
+    url: "/pivot-control",
     icon: Settings,
   },
 ];
 
 export function AppSidebar() {
+  const path = usePathname();
+
   const {
     state,
     open,
@@ -103,7 +107,12 @@ export function AppSidebar() {
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton
+                    className={`${
+                      path === item.url ? "bg-blue-500 text-white" : ""
+                    }`}
+                    asChild
+                  >
                     <a href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
